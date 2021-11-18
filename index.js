@@ -17,7 +17,7 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
             break;
         
         case "addContact":
-            const newContact = await contactsPath.add({ name, email, phone });
+            const newContact = await contactsPath.addContact({ name, email, phone });
             console.table(newContact);
             break;
               
